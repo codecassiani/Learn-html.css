@@ -4,7 +4,7 @@ First Release: MAR-2024
 Description: Code used to build the first class of Guanabara's course named HTML5 and CSS3
 License: MIT
 Version: v0.1
-Notes: Mod. 1 - Cap. 6 - Aula 5
+Notes: Mod. 1 - Cap. 8 - Aula 1
 -->
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,11 +13,11 @@ Notes: Mod. 1 - Cap. 6 - Aula 5
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../icons/aguia-icon-256.ico" type="image/x-icon">
-    <title>Ícones</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <h1>Exite um Favicon adicionado ao meu site! </h1>
+
 </body>
 
 </html>
