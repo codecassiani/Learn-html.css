@@ -4,7 +4,7 @@ First Release: MAR-2024
 Description: Code used to build the first class of Guanabara's course named HTML5 and CSS3
 License: MIT
 Version: v0.1
-Notes: Mod. 1 - Cap. 8 - Aula 3 (Continuação aula 2, deste Cap.)
+Notes: Mod. 1 - Cap. 9 - Aula 1 e 2
 -->
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,39 +13,96 @@ Notes: Mod. 1 - Cap. 8 - Aula 3 (Continuação aula 2, deste Cap.)
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../icons/aguia-icon-256.ico" type="image/x-icon">
-    <title>Formatação de textos 2</title>
+    <title>Listas OL e UL</title>
 </head>
 
 <body>
-    <h1>Principais formatações</h1>
-    <h2>Texto marcado</h2>
-    <p>Este é um exemplo de <mark>texto marcado</mark> usando a tag &lt;MARK&gt;.</p>
+    <h1>Listas</h1>
+    <h2>Lista Ordenadas</h2>
+    <ol type="1" start="1"> <!-- 1, A, a, I, i -->
+        <li>Faça a cama.</li>
+        <li>Tome café da manhã.</li>
+        <li>Faça 15 minutos de exercícios físicos.</li>
+        <li>Responda a e-mails importantes.</li>
+        <li>Faça uma lista de compras.</li>
+        <li>Organize a papelada em sua mesa.</li>
+        <li>Ligue para um amigo ou membro da família para verificar como estão.</li>
+        <li>Reserve 30 minutos para leitura.</li>
+        <li>Dedique algum tempo para um hobby ou atividade relaxante.</li>
+        <li>Prepare e coma um almoço saudável.</li>
+        <li>Realize uma tarefa de limpeza em um cômodo da casa.</li>
+        <li>Planeje suas metas para a semana.</li>
+        <li>Faça uma caminhada curta ao ar livre.</li>
+        <li>Assista a um vídeo educacional ou inspirador.
+        <li>Termine o dia revisando o que foi realizado e planeje as tarefas para amanhã.</li>
+    </ol>
+    <!-- Entre com a propriedade Type, dentro da tag OL, para definir qual será o tipo da lista, sendo ela, númerada por números, algarismos romanos ou letras, e com a propriedade Start, para definir em qual valor irá começar -->
 
-    <h2>Texto grande e pequeno</h2>
-    <!-- Aumentar uma letra, pode ser uma questão de estilo, por isso se tornou obsoleta. Já em um contrato, temos as letras pequenas, e por esse motivo é possível que a TAG small ainda esteja ok, em ser usada. -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, <ins><big>praesentium eaque aut
-                dicta</big></ins> molestiae
-        sed, possimus veniam ea neque corporis iste ad <ins><small>saepe dolor autem ducimus.</small></ins> Iure unde
-        beatae dolor.<br>Usando as TAGS &lt;BIG&gt; (desuso) e &lt;SMALL&gt;.
-    </p>
+    <h2>Lista Não Ordenadas</h2>
+    <ul type="circle"> <!-- disc, circle, square -->
+        <li>Leite</li>
+        <li>Ovos</li>
+        <li>Pão</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Carne moída</li>
+        <li>Frango</li>
+        <li>Batatas</li>
+        <li>Cebolas</li>
+        <li>Alho</li>
+        <li>Tomates</li>
+        <li>Salada verde</li>
+        <li>Maçãs</li>
+        <li>Bananas</li>
+        <li>Sabonete</li>
+    </ul>
 
-    <h2>Texto deletado</h2>
-    <p><del>Podemos marcar um texto como excluído para indicar que ele deve ser lido, mas não considerado.</del> com a
-        TAG &lt;DEL&gt;</p>
 
-    <h2>Texto inserido</h2>
-    <p><ins>Podemos marcar um texto como inserido, para dar uma ênfase e destacar que ele foi inserido depois.</ins> com
-        a TAG &lt;INS&gt;</p>
+    <h2>Lista Unificadas</h2>
+    <ul type="square">
+        <li>Minhas linguagens favoritas</li>
+        <ol type="A">
+            <li>Antigas</li>
+            <ul type="disc">
+                <li>Visual Basic</li>
+                <li>C</li>
+                <li>C++</li>
+            </ul>
 
-    <h2>Texto sublinhado</h2>
-    <p>Podemos usar <u>sublinhado</u> usando a TAG &lt;U&gt; (Não semântica).</p>
+            <li>Novas</li>
+            <ul type="disc">
+                <li>C#</li>
+                <li>Python</li>
+            </ul>
+        </ol>
+        <li>Bandas</li>
+        <ol type="A">
+            <li>Rock</li>
+            <ul type="disc">
+                <li>Iron Maiden</li>
+                <li>Queen</li>
+            </ul>
+            <li>POP</li>
+            <ul type="disc">
+                <li>Queen</li>
+                <li>ABBA</li>
+            </ul>
+            <li>Nacionais</li>
+            <ul type="disc">
+                <li>Roupa Nova</li>
+                <li>Biquini Cavadão</li>
+            </ul>
+        </ol>
+    </ul>
 
-    <h2>Texto sobescrito</h2>
-    <p>Para fazer uma equação, por exemplo: X<sup>3</sup> + 2<br>TAG &lt;SUP&gt;</p>
-
-    <h2>Texto subescrito</h2>
-    <p>Para fazer uma fórmula química, por exemplo: H<sub>2</sub>0<br>TAG &lt;SUB&gt;</p>
-
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
 </body>
-
 </html>
